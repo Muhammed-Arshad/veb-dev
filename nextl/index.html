@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>nextL</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/quiz.css">
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+   
+    header {
+  position: relative;
+  height: 600px;
+  background: #0b345d;
+  background-image: linear-gradient(155deg, #002f62 0%, #18496a 50%, #138b89 100%);
+}
+    
+    .button {
+  
+  background-color: #b5b32b;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 22px;
+  padding: 10px;
+  width: 180px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+        @media screen and (max-width: 580px) {
+            #oq{display: none;}
+        }
+</style>
+<body>
+<div>
+<!-- Navbar -->
+<div class="w3-top" style="color: white">
+  <div style="background-image:url('img/Monthly-Website-Header-background.jpg');" class="w3-bar  w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+    <a href="" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">News</a>
+    <a href="contact.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Contact</a>
+    <a href="Aboutme.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">About</a>
+      
+    
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="" class="w3-bar-item w3-button w3-padding-large">News</a>
+    <a href="contact.html" class="w3-bar-item w3-button w3-padding-large">Contact</a>
+    <a href="Aboutme.html" class="w3-bar-item w3-button w3-padding-large">About</a>
+    
+  </div>
+</div>
+
+<!-- Header -->
+
+<header class="w3-container  w3-center bghome" style="padding:128px 16px">
+    
+  <img src="img/nextllogo.png" alt="nextL logo"style="width:140px;height:140px;">
+        
+  <p  style="font-size: 50px; font-family:Lobster;color: cadetblue">Online Quiz</p>
+   
+    <a href="login.php" title="Login"  style="text-decoration: none"><button style="border: 1.2px solid #e7e7e7" class="button"><span>Login </span></button></a>
+    <a href="nextldemo.php" title="Get Started"  style="text-decoration: none"><button class="button" style="color:white;border: 1.2px solid #e7e7e7;background-image:url('img/Monthly-Website-Header-background.jpg');"><span>Get Started </span></button></a>
+    <a href="signup.php" title="Sign Up"  style="text-decoration: none"><button class="button" style="background-color: #199143;border: 1.2px solid #e7e7e7"><span>Sign Up</span></button></a>
+      </header>
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+    <img id="oq" src="img/quiz_time.png" alt="Pineapple" style="width:350px;height:320px;margin-right: :30px;padding-top:90px;padding-right: 40px;float: right;">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1>Online Free Quizzes</h1>
+      <h5 class="w3-padding-32" style="word-spacing:5px">nextL's Free Online Tests include a wide range of GK and General Awareness Questions and Answers in GK Quiz form. These Online General Knowledge Tests cover all those topics which can be useful for any Competitive Exams </h5>
+
+      <p class="w3-text-grey">Questions related to General Knowledge are an indispensable part of every competitive examinations conducted by SSC, UPSC, PSC, LIC, GIC, Railways, IBPS, etc. The main objective of these questions is to test the candidate's knowledge in Traditional General Knowledge, Constitution of India and Indian Polity, Geography, History, General Science, Computer and Technology, Economics, Current Affairs, etc. For this purpose we have provided more than 500 objective General Knowledge questions for the candidates to enhance their knowledge in this area. All these questions had already been asked in various competitive examinations such as SSC CGL, SSC CHSL, SSC TAX ASSISTANT, UPSC, BANK CLERK, BANK PO, CDS, NDA, CPO, PSC, LIC, GIC, RAILWAYS, etc.</p>
+    </div>
+
+    <div class="w3-third w3-center">
+      
+    </div>
+  </div>
+</div>
+
+<!-- Second Grid -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container"> <div style="padding-left: 70px;padding-top: 40px;">
+        <img id="oq" src="img/general-knowledge.jpg" alt="Pineapple" style="width:350px;height:320px;margin-right: :30px;padding-top:100px;padding-right: 0px;float: left;">
+    </div>
+  <div class="w3-content">
+    <div class="w3-third w3-center">
+      
+    </div>
+
+    <div class="w3-twothird" style="float: right">
+      <h1>Important GK Questions with Answers</h1>
+      <h5 class="w3-padding-32">All this tests consists of the Important GK Questions covering all the important and latest GK of Capitals and currencies ,Current Affairs,Books and Mvies,History,cultures,Science and Technology,Sports,Politics and Governance,Important Dates,Biology,World,Economy and India</h5>
+
+      <p class="w3-text-grey">GK or General Awareness section can be the easiest section in all government, banking, SSC, railways exams when followed regularly. Aspirants of competitive exams such as IBPS, UPSC, SSC, Bank PO, Bank Clerk, IBPS, Railways, Government Jobs, UPPSC, MPSC, etc can refer to the general knowledge questions and answers from this article. This article will help you in cracking any competitive exams you will come across in the near future such as IBPS, SBI, RBI, RRB NTPC, SSC, etc. The best way to analyze your General knowledge is by attempting a quiz based on the happenings. Navigate your way through the article and click on that specific date to attempt GK quiz for that particular day.</p>
+    </div>
+  </div>
+</div>
+
+<div style="background-color:cadetblue" class="w3-container w3-center w3-opacity w3-padding-64">
+    <h1 class="w3-margin w3-xlarge">Quote of the day: live life</h1>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+  <div class="w3-xlarge w3-padding-32">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+ </div>
+ <p>&copy; copyright nextL.in</p>
+</footer>
+
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+    </script>
+
+</body>
+</html>
